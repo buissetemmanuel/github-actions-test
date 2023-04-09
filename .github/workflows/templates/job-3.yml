@@ -1,11 +1,11 @@
-name: JOB 1
+name: "JOB 3"
 
-on:
+# test
+'on':
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
-
+    branches: ["main"]
   workflow_call:
 
 jobs:
