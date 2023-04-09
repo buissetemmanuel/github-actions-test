@@ -10,6 +10,9 @@ name: RELEASE
 permissions:
   contents: read # for checkout
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   release:
     permissions:
