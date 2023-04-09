@@ -1,0 +1,15 @@
+name: MOLECULE LINT
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  yaml-lint:
+    uses: buissetemmanuel/cicd-templates/.github/workflows/yamllint.yml@main
+  ansible-lint:
+    uses: buissetemmanuel/cicd-templates/.github/workflows/ansible-lint.yml@main
