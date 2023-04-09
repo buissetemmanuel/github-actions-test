@@ -35,3 +35,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  job_3:
+    uses: buissetemmanuel/github-actions-test/.github/workflows/templates/job-3.yml@main
+    needs: job_2
