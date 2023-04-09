@@ -1,6 +1,12 @@
 name: MOLECULE LINT
 
 on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
   workflow_call:
 
 jobs:
