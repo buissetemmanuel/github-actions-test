@@ -2,11 +2,6 @@
 
 name: RELEASE
 
-'on':
-  push:
-    branches:
-      - main
-
 jobs:
   release:
     uses: buissetemmanuel/cicd-templates/.github/workflows/release.yml@main
