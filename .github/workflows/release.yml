@@ -7,6 +7,9 @@ name: RELEASE
     branches:
       - main
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   release:
     permissions:
