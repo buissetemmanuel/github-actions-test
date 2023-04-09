@@ -10,13 +10,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   job_1:
-    uses: github.com/buissetemmanuel/github-actions/.github/workflows/job-1.yml@main
+    uses: github.com/buissetemmanuel/github-actions-test/.github/workflows/job-1.yml@main
   # This workflow contains a single job called "build"
   job_2:
     needs: job_1
