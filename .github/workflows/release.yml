@@ -9,4 +9,6 @@ name: RELEASE
 
 jobs:
   release:
+    permissions:
+      contents: write
     uses: buissetemmanuel/cicd-templates/.github/workflows/release.yml@main
